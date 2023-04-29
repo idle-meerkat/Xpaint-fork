@@ -264,7 +264,8 @@ int ev_loop(){
 			break;
 			case DestroyNotify:
 				// TODO: How to exit gracfully when internal Close button doesn't work
-				XFreeGC(GC);
+                // TODO(vb)?
+				// XFreeGC(GC);
 				XCloseDisplay(dpy);
 				quit = 1;
 			break;
